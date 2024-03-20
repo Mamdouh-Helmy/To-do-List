@@ -141,3 +141,16 @@ body{
 .all:hover{
     background-color: rgb(220, 0, 0);
 }
+@media screen and (max-width: 768px) {
+    .contaner {
+        width: 90%; 
+        display: block;
+    }
+    .contaner input{
+        width: 100%;
+    }
+    .contaner button{
+        margin: 10px auto 0;
+        width: 100%;
+    }
+}
