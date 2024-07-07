@@ -81,7 +81,7 @@ body{
     background-color: rgb(129, 129, 255);
     width: 100%;
     height: 4px;
-    z-index: 100;
+    z-index: 1;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -98,6 +98,41 @@ body{
 .contaner .text h3{
     padding: 10px;
     color: rgb(129, 129, 255);
+}
+.box-container{
+    display: flex;
+    gap: 10px;
+}
+.edit , .finish{
+    background-color: rgb(91, 91, 185);
+    color: white;
+    padding: 4px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    position: relative;
+    z-index: 100;
+}
+.finish:hover{
+    background-color: rgb(42, 42, 126);
+}
+.finish.checkTrue{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50px, -10px);
+}
+.edit:hover{
+    background-color: transparent;
+    color: rgb(91, 91, 185);
+    border: 1px solid rgb(91, 91, 185);
 }
 .contaner .text span{
     display: block;
